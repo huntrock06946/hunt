@@ -1,0 +1,189 @@
+# CH 3.各種資料型態的許多運算
+ -- 整數的各種運算 [參考範例](https://www.w3schools.com/python/python_numbers.asp) [Python Operators](https://www.w3schools.com/python/python_operators.asp)
+ -- 字串str的各種運算 [參考範例](https://www.w3schools.com/python/python_strings.asp)
+ -- 列表list的各種運算 [參考範例](https://www.w3schools.com/python/python_lists.asp)
+ -- 字典dict的各種運算 [參考範例](https://www.w3schools.com/python/python_dictionaries.asp)
+ 
+## 整數的各種運算 [參考範例](https://www.w3schools.com/python/python_numbers.asp) [Python Operators](https://www.w3schools.com/python/python_operators.asp)
+ 
+```python
+ x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+```python
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+```python
+x = 35e3
+y = 12E4
+z = -87.7e100
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+```python
+#convert from int to float:
+x = float(1)
+
+#convert from float to int:
+y = int(2.8)
+
+#convert from int to complex:
+z = complex(1)
+
+print(x)
+print(y)
+print(z)
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+```python
+x = 3+5j
+y = 5j
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+## 字串str的各種運算 [參考範例](https://www.w3schools.com/python/python_strings.asp)
+
+```python
+a = "Hello"
+print(a)
+```
+
+```python
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+```
+
+```python
+a = "Hello, World!"
+print(a[1])
+```
+
+```python
+for x in "banana":
+  print(x)
+```
+
+```python
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
+```
+
+## 列表list的各種運算 [參考範例](https://www.w3schools.com/python/python_lists.asp)
+
+```python
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+```
+
+```python
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+
+print(list1)
+print(list2)
+print(list3)
+```
+
+```python
+mylist = ["apple", "banana", "cherry"]
+
+print(type(mylist))
+```
+
+```python
+thislist = list(("apple", "banana", "cherry"))
+print(thislist)
+```
+
+```python
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")
+```
+
+## 字典dict的各種運算 [參考範例](https://www.w3schools.com/python/python_dictionaries.asp)
+
+```python
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+```
+
+```python
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict)
+```
+
+```python
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+
+print(thisdict)
+```
+
+```python
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict["model"]
+print(x)
+```
+
+```python
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.keys()
+
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the change
+```
